@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osbely Casanova</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/4fca10f768.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <figure><img class="logo" src="img/eidoslogo.png" alt="Logo Eidos" /></figure>
+        <nav>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul class="menu" id="menu">
+                <li class="menu-item"><a href="#inicio" class="active item">Inicio</a></li>
+                <li class="menu-item"><a href="#contacto" class="item">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <figure><img class="foto" src="img/Foto Personal.png" alt="Foto Osbely" /></figure>
+            <h1>
+                Hola! Soy Osbely
+            </h1>
+            <p class="parrafo">
+                Estoy en proceso de aprendizaje de desarrollo web. Este es mi segundo proyecto con HTML y CSS y el primero con JavaScript.
+                En este proyecto pongo en práctica parte de lo que he aprendido hasta el momento, con foco en funciones, condicionales y manipulación del DOM.
+                Continué con la práctica de repositorios, creando uno local Git y uno remoto en GitHub para tener acceso a las
+                versiones de mi proyecto y poder compartirlo.
+            </p>
+            <p class="boton">Descargar mi CV</p>
+        </section>
+
+        <section id="contacto">
+            <article>
+                <h2>Hablemos!</h2>
+                <p class="parrafo">
+                    Puedes contactarme a través de mi correo electrónico o whatsapp si deseas que te ayude a crear un
+                    proyecto como éste. También puedes ver mis respositorios en GitHub que espero ir sumando
+                    eventualmente.
+                </p>
+            </article>
+            <div>
+                <a href="https://wa.me/41996402534" target="_blank">
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                </a>
+                <!-- valor nuevo aprendido para href, mailto, para indicar que el direccionamiento es para un email-->
+                <a href="mailto:osbelycasanova@gmail.com" target="_blank">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://github.com/OsbelyCasanova/" target="_blank">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
+            </div>
+        </section>
+
+        <form id="formulario" onsubmit="validarFormulario(event)">
+            <h3>Formulario de contacto</h3>
+            <div>
+                <label for="name">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+
+            <button id="btn" type="submit">Enviar</button>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>
+            Código Latam
+        </p>
+    </footer>
+
+    <script src="JS/main.js"></script>
+
+</body>
+
+</html>

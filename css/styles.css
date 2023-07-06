@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fbfbfb;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.2;
+}
+
+.logo {
+    width: 20vh;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 1.6rem;
+    position: fixed;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    margin-left: 1.2rem;
+}
+
+ul li a:hover {
+    color: #680454;
+}
+
+.active {
+    margin-top: 0px;
+    background-color: #af599e;
+    color: #fbfbfb;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 auto;
+    width: max-content;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.foto {
+    max-width: 300px;
+    border-radius: 50%;
+    border: 1px solid #af599e;
+    margin-top: 100px;
+}
+
+section {
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h1,
+.parrafo {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.parrafo,
+li {
+    font-size: 18px;
+}
+
+.boton {
+    margin-top: 0px;
+    background-color: #af599e;
+    color: #fbfbfb;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 auto;
+    width: max-content;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+article {
+    justify-content: center;
+    justify-items: center;
+    background-color: rgba(175, 89, 158, 0.3);
+    color: #0f0f0f;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+h2,
+h3 {
+    font-size: 28px;
+}
+
+section div {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 50px;
+    color: #af599e;
+    padding: 40px;
+}
+
+i:hover {
+    transform: scale(1.5);
+    transition: 1.5s;
+}
+
+form {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    min-height: 100vh;
+}
+
+form div {
+    padding: 20px;
+}
+
+label {
+    color: #0f0f0f;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 2px solid #af599e;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 600px;
+}
+
+textarea {
+    height: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #af599e;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 600px;
+    margin-top: 30px;
+}
+
+button:hover {
+    transition: 1s;
+    background-color: rgba(175, 89, 158, 0.3);
+    color: #0f0f0f;
+}
+
+footer {
+    background-color: #af599e;
+    padding: 15px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    color: #fbfbfb;
+}
+
+.quitarMenu {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        height: 10%;
+    }
+
+    .logo {
+        width: 10vh;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .desplegable {
+        margin: 0;
+        width: 30%;
+        position: absolute;
+        right: 0;
+        display: none;
+        background: #f5d5ee;
+        padding-left: 0px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .active {
+        margin-top: 10%;
+        background-color: #af599e;
+        color: #fbfbfb;
+        font-size: 15px;
+        display: inline-block;
+        margin: 0 auto;
+        width: max-content;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .foto {
+        margin-top: 80px;
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .parrafo,
+    li,
+    .boton,
+    label,
+    button {
+        font-size: 16px;
+    }
+
+    h2,
+    h3 {
+        font-size: 22px;
+    }
+
+    section div {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    input,
+    textarea {
+        padding: 10px;
+        border: 2px solid #af599e;
+        border-radius: 5px;
+        font-size: 10px;
+        width: 100%;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    button,
+    form div {
+        width: 80%;
+    }
+
+}
